@@ -3,6 +3,10 @@ Rails.application.routes.draw do
   get 'url_params_example/:message' => 'params#url_params_example'
   get 'form_display' => 'params#form_display'
   post 'form_result' => 'params#form_result'
+  get 'guess' => 'params#guess_a_number'
+
+  get 'guessing-game' => 'params#guessing_game'
+  post 'guess-submitted' => 'params#guess_submitted'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
